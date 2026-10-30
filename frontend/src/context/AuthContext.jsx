@@ -51,13 +51,14 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (userData) => {
     const res = await authService.register(userData);
-    if (res.success && res.data) {
-      const { user: newUser, token: jwtToken } = res.data;
-      setUser(newUser);
-      setToken(jwtToken);
-      localStorage.setItem('hostelcare_token', jwtToken);
-      localStorage.setItem('hostelcare_user', JSON.stringify(newUser));
-      return newUser;
+    if (res.success) {
+      if (res.data?.token && res.data?.user) {
+        setUser(res.data.user);
+        setToken(res.data.token);
+        localStorage.setItem('hostelcare_token', res.data.token);
+        localStorage.setItem('hostelcare_user', JSON.stringify(res.data.user));
+      }
+      return res.data || res;
     }
     throw new Error(res.message || 'Registration failed');
   };
@@ -101,4 +102,3 @@ export const useAuth = () => {
   if (!ctx) throw new Error('useAuth must be used within an AuthProvider');
   return ctx;
 };
-

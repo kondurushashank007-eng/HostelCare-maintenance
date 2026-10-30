@@ -7,6 +7,15 @@ export const authService = {
   register: async (userData) => {
     return api.post('/auth/register', userData);
   },
+  registerStudent: async (data) => {
+    return api.post('/auth/register/student', data);
+  },
+  registerWarden: async (data) => {
+    return api.post('/auth/register/warden', data);
+  },
+  registerTechnician: async (data) => {
+    return api.post('/auth/register/technician', data);
+  },
   getProfile: async () => {
     return api.get('/auth/profile');
   },
@@ -16,5 +25,10 @@ export const authService = {
   getRooms: async () => {
     return api.get('/auth/rooms');
   },
+  getPendingStaff: async () => {
+    return api.get('/auth/pending-staff');
+  },
+  approveStaff: async (id) => {
+    return api.put(`/auth/staff/${id}/approve`);
+  },
 };
-

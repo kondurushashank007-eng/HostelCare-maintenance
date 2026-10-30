@@ -5,9 +5,13 @@ import { useAuth } from '../context/AuthContext';
 import { AppLayout } from '../layouts/AppLayout';
 import { ProtectedRoute } from './ProtectedRoute';
 
-// Auth Pages
+// Auth & Registration Hub Pages
 import { LoginPage } from '../pages/LoginPage';
-import { RegisterPage } from '../pages/RegisterPage';
+import { RegisterSelectionPage } from '../pages/RegisterSelectionPage';
+import { StudentRegisterPage } from '../pages/register/StudentRegisterPage';
+import { WardenRegisterPage } from '../pages/register/WardenRegisterPage';
+import { ElectricianRegisterPage } from '../pages/register/ElectricianRegisterPage';
+import { PlumberRegisterPage } from '../pages/register/PlumberRegisterPage';
 
 // Shared Detail View
 import { ComplaintDetailsPage } from '../pages/ComplaintDetailsPage';
@@ -36,7 +40,10 @@ export const AppRoutes = () => {
   if (loading) {
     return (
       <div className="min-h-screen bg-slate-900 flex items-center justify-center text-white text-sm">
-        Initializing HostelCare...
+        <div className="flex items-center gap-2">
+          <div className="w-5 h-5 border-2 border-sky-400 border-t-transparent rounded-full animate-spin" />
+          <span>Initializing HostelCare Portal...</span>
+        </div>
       </div>
     );
   }
@@ -50,9 +57,34 @@ export const AppRoutes = () => {
 
   return (
     <Routes>
-      {/* Public routes */}
-      <Route path="/login" element={!isAuthenticated ? <LoginPage /> : <Navigate to={getHomeRedirect()} />} />
-      <Route path="/register" element={!isAuthenticated ? <RegisterPage /> : <Navigate to={getHomeRedirect()} />} />
+      {/* Public Auth & Registration Routes */}
+      <Route
+        path="/login"
+        element={!isAuthenticated ? <LoginPage /> : <Navigate to={getHomeRedirect()} replace />}
+      />
+      <Route
+        path="/register"
+        element={!isAuthenticated ? <RegisterSelectionPage /> : <Navigate to={getHomeRedirect()} replace />}
+      />
+      <Route
+        path="/register/student"
+        element={!isAuthenticated ? <StudentRegisterPage /> : <Navigate to={getHomeRedirect()} replace />}
+      />
+      <Route
+        path="/register/warden"
+        element={!isAuthenticated ? <WardenRegisterPage /> : <Navigate to={getHomeRedirect()} replace />}
+      />
+      <Route
+        path="/register/electrician"
+        element={!isAuthenticated ? <ElectricianRegisterPage /> : <Navigate to={getHomeRedirect()} replace />}
+      />
+      <Route
+        path="/register/plumber"
+        element={!isAuthenticated ? <PlumberRegisterPage /> : <Navigate to={getHomeRedirect()} replace />}
+      />
+
+      {/* Legacy / Direct Aliases */}
+      <Route path="/warden/dashboard" element={<Navigate to="/admin/dashboard" replace />} />
 
       {/* Authenticated routes inside AppLayout */}
       <Route element={<AppLayout />}>
@@ -64,7 +96,7 @@ export const AppRoutes = () => {
           <Route path="/student/profile" element={<StudentProfilePage />} />
         </Route>
 
-        {/* Admin Routes */}
+        {/* Admin / Warden Routes */}
         <Route element={<ProtectedRoute allowedRoles={['admin']} />}>
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/complaints" element={<AdminComplaintsPage />} />
@@ -88,10 +120,9 @@ export const AppRoutes = () => {
         </Route>
       </Route>
 
-      {/* Root redirect */}
+      {/* Root & Catch-all redirects */}
       <Route path="/" element={<Navigate to={getHomeRedirect()} replace />} />
       <Route path="*" element={<Navigate to={getHomeRedirect()} replace />} />
     </Routes>
   );
 };
-
