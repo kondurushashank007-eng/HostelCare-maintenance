@@ -1,0 +1,25 @@
+{
+  "name": "hostelcare",
+  "version": "1.0.0",
+  "description": "HostelCare - Smart Hostel Complaint & Maintenance Management System",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed",
+    "test:api": "cd backend && node scripts/verify-api.js",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "hostelcare",
+    "smart-hostel",
+    "maintenance-management",
+    "complaint-management",
+    "gemini-ai",
+    "supabase",
+    "react",
+    "express"
+  ],
+  "author": "HostelCare Engineering Team",
+  "license": "ISC"
+}
+

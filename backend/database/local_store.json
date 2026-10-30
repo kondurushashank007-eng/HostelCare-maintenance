@@ -1,0 +1,442 @@
+{
+  "hostel_rooms": [
+    {
+      "id": "11111111-1111-1111-1111-111111111101",
+      "block": "A",
+      "room_number": "101",
+      "floor": 1,
+      "capacity": 2
+    },
+    {
+      "id": "11111111-1111-1111-1111-111111111102",
+      "block": "A",
+      "room_number": "102",
+      "floor": 1,
+      "capacity": 2
+    },
+    {
+      "id": "11111111-1111-1111-1111-111111111201",
+      "block": "A",
+      "room_number": "201",
+      "floor": 2,
+      "capacity": 2
+    },
+    {
+      "id": "11111111-1111-1111-1111-111111111204",
+      "block": "A",
+      "room_number": "204",
+      "floor": 2,
+      "capacity": 2
+    },
+    {
+      "id": "22222222-2222-2222-2222-222222222105",
+      "block": "B",
+      "room_number": "105",
+      "floor": 1,
+      "capacity": 2
+    },
+    {
+      "id": "22222222-2222-2222-2222-222222222202",
+      "block": "B",
+      "room_number": "202",
+      "floor": 2,
+      "capacity": 2
+    },
+    {
+      "id": "22222222-2222-2222-2222-222222222301",
+      "block": "B",
+      "room_number": "301",
+      "floor": 3,
+      "capacity": 2
+    },
+    {
+      "id": "33333333-3333-3333-3333-333333333102",
+      "block": "C",
+      "room_number": "102",
+      "floor": 1,
+      "capacity": 2
+    },
+    {
+      "id": "33333333-3333-3333-3333-333333333205",
+      "block": "C",
+      "room_number": "205",
+      "floor": 2,
+      "capacity": 2
+    },
+    {
+      "id": "33333333-3333-3333-3333-333333333302",
+      "block": "C",
+      "room_number": "302",
+      "floor": 3,
+      "capacity": 2
+    },
+    {
+      "id": "44444444-4444-4444-4444-444444444101",
+      "block": "D",
+      "room_number": "101",
+      "floor": 1,
+      "capacity": 2
+    },
+    {
+      "id": "44444444-4444-4444-4444-444444444203",
+      "block": "D",
+      "room_number": "203",
+      "floor": 2,
+      "capacity": 2
+    }
+  ],
+  "users": [
+    {
+      "id": "aaaa0000-0000-0000-0000-000000000001",
+      "name": "Dr. Ramesh Verma",
+      "email": "admin@hostelcare.com",
+      "password_hash": "$2a$10$ZBSah8a8clEaEQVSNo1VMezQLIaWYuGQbK7aLySiSxZEZG3rWVlsC",
+      "role": "admin",
+      "phone": "+91 98765 43210",
+      "room_id": null
+    },
+    {
+      "id": "bbbb0000-0000-0000-0000-000000000001",
+      "name": "Rajesh Kumar",
+      "email": "rajesh.electrician@hostelcare.com",
+      "password_hash": "$2a$10$ZBSah8a8clEaEQVSNo1VMe3W/NxuBVyxdUX.hXv/Z6MGfk/mjIWH6",
+      "role": "technician",
+      "phone": "+91 98111 22334",
+      "room_id": null
+    },
+    {
+      "id": "bbbb0000-0000-0000-0000-000000000002",
+      "name": "Suresh Sharma",
+      "email": "suresh.plumber@hostelcare.com",
+      "password_hash": "$2a$10$ZBSah8a8clEaEQVSNo1VMe3W/NxuBVyxdUX.hXv/Z6MGfk/mjIWH6",
+      "role": "technician",
+      "phone": "+91 98222 33445",
+      "room_id": null
+    },
+    {
+      "id": "bbbb0000-0000-0000-0000-000000000003",
+      "name": "Amit Patel",
+      "email": "amit.wifi@hostelcare.com",
+      "password_hash": "$2a$10$ZBSah8a8clEaEQVSNo1VMe3W/NxuBVyxdUX.hXv/Z6MGfk/mjIWH6",
+      "role": "technician",
+      "phone": "+91 98333 44556",
+      "room_id": null
+    },
+    {
+      "id": "bbbb0000-0000-0000-0000-000000000004",
+      "name": "Manoj Singh",
+      "email": "manoj.carpenter@hostelcare.com",
+      "password_hash": "$2a$10$ZBSah8a8clEaEQVSNo1VMe3W/NxuBVyxdUX.hXv/Z6MGfk/mjIWH6",
+      "role": "technician",
+      "phone": "+91 98444 55667",
+      "room_id": null
+    },
+    {
+      "id": "cccc0000-0000-0000-0000-000000000001",
+      "name": "Rahul Sharma",
+      "email": "rahul.sharma@hostel.edu",
+      "password_hash": "$2a$10$ZBSah8a8clEaEQVSNo1VMeg1W.Y1lhNb3aKo7I3edPbWqxeFlU3/2",
+      "role": "student",
+      "phone": "+91 97111 11222",
+      "room_id": "11111111-1111-1111-1111-111111111204"
+    },
+    {
+      "id": "cccc0000-0000-0000-0000-000000000002",
+      "name": "Priya Patel",
+      "email": "priya.patel@hostel.edu",
+      "password_hash": "$2a$10$ZBSah8a8clEaEQVSNo1VMeg1W.Y1lhNb3aKo7I3edPbWqxeFlU3/2",
+      "role": "student",
+      "phone": "+91 97222 22333",
+      "room_id": "22222222-2222-2222-2222-222222222105"
+    },
+    {
+      "id": "cccc0000-0000-0000-0000-000000000003",
+      "name": "Arun Kumar",
+      "email": "arun.kumar@hostel.edu",
+      "password_hash": "$2a$10$ZBSah8a8clEaEQVSNo1VMeg1W.Y1lhNb3aKo7I3edPbWqxeFlU3/2",
+      "role": "student",
+      "phone": "+91 97333 33444",
+      "room_id": "33333333-3333-3333-3333-333333333302"
+    }
+  ],
+  "technicians": [
+    {
+      "id": "bbbb0000-0000-0000-0000-000000000001",
+      "user_id": "bbbb0000-0000-0000-0000-000000000001",
+      "specialization": "Electrical",
+      "is_available": true,
+      "active_tasks_count": 2,
+      "rating_average": 4.8
+    },
+    {
+      "id": "bbbb0000-0000-0000-0000-000000000002",
+      "user_id": "bbbb0000-0000-0000-0000-000000000002",
+      "specialization": "Plumbing",
+      "is_available": true,
+      "active_tasks_count": 1,
+      "rating_average": 4.9
+    },
+    {
+      "id": "bbbb0000-0000-0000-0000-000000000003",
+      "user_id": "bbbb0000-0000-0000-0000-000000000003",
+      "specialization": "Internet / Wi-Fi",
+      "is_available": true,
+      "active_tasks_count": 1,
+      "rating_average": 4.6
+    },
+    {
+      "id": "bbbb0000-0000-0000-0000-000000000004",
+      "user_id": "bbbb0000-0000-0000-0000-000000000004",
+      "specialization": "Furniture",
+      "is_available": true,
+      "active_tasks_count": 0,
+      "rating_average": 4.7
+    }
+  ],
+  "complaints": [
+    {
+      "id": "dddd0000-0000-0000-0000-000000000001",
+      "complaint_code": "HC-2025-1011",
+      "student_id": "cccc0000-0000-0000-0000-000000000001",
+      "room_id": "11111111-1111-1111-1111-111111111204",
+      "title": "Ceiling Fan Making Burning Smell & Sparks",
+      "description": "The regulator is hot to touch and whenever we turn the fan speed to 4, small sparks appear inside the ceiling canopy with an electrical burning smell. Urgent hazard.",
+      "category": "Electrical",
+      "priority": "Urgent",
+      "status": "In Progress",
+      "images": [],
+      "resolution_images": [],
+      "assigned_technician_id": "bbbb0000-0000-0000-0000-000000000001",
+      "ai_analysis": {
+        "category_suggested": "Electrical",
+        "priority_suggested": "Urgent",
+        "suggested_specialization": "Electrician",
+        "summary": "Ceiling fan sparking and emitting burning smell; immediate fire hazard.",
+        "urgency_flags": [
+          "Safety Hazard Detected",
+          "Electrical Spark / Fire Risk"
+        ],
+        "confidence": 0.98,
+        "source": "gemini-ai"
+      },
+      "is_escalated": false,
+      "created_at": "2026-10-30T04:27:57.891Z"
+    },
+    {
+      "id": "dddd0000-0000-0000-0000-000000000002",
+      "complaint_code": "HC-2025-1012",
+      "student_id": "cccc0000-0000-0000-0000-000000000002",
+      "room_id": "22222222-2222-2222-2222-222222222105",
+      "title": "Washbasin Pipe Leaking Heavily in Bathroom",
+      "description": "The pipe joint under the sink has cracked and water is continuously flooding the bathroom floor. Tap valve is tight and cannot be turned off manually.",
+      "category": "Plumbing",
+      "priority": "High",
+      "status": "Assigned",
+      "images": [],
+      "resolution_images": [],
+      "assigned_technician_id": "bbbb0000-0000-0000-0000-000000000002",
+      "ai_analysis": {
+        "category_suggested": "Plumbing",
+        "priority_suggested": "High",
+        "suggested_specialization": "Plumber",
+        "summary": "Cracked washbasin joint leaking continuously, causing bathroom flooding.",
+        "urgency_flags": [
+          "Essential Amenity Disrupted"
+        ],
+        "confidence": 0.95,
+        "source": "gemini-ai"
+      },
+      "is_escalated": false,
+      "created_at": "2026-10-29T21:27:57.892Z"
+    },
+    {
+      "id": "dddd0000-0000-0000-0000-000000000003",
+      "complaint_code": "HC-2025-1013",
+      "student_id": "cccc0000-0000-0000-0000-000000000003",
+      "room_id": "33333333-3333-3333-3333-333333333302",
+      "title": "No Wi-Fi Signal on Floor 3 West Wing",
+      "description": "Hostel access point AP-C3-02 has all LED lights blinking red. No device can obtain an IP address or access the portal.",
+      "category": "Internet / Wi-Fi",
+      "priority": "Medium",
+      "status": "Pending",
+      "images": [],
+      "resolution_images": [],
+      "assigned_technician_id": null,
+      "ai_analysis": {
+        "category_suggested": "Internet / Wi-Fi",
+        "priority_suggested": "Medium",
+        "suggested_specialization": "Network / IT Specialist",
+        "summary": "Access point blinking red, floor-wide DHCP/connectivity disruption.",
+        "confidence": 0.92,
+        "source": "gemini-ai"
+      },
+      "is_escalated": false,
+      "created_at": "2026-10-29T13:27:57.892Z"
+    },
+    {
+      "id": "dddd0000-0000-0000-0000-000000000004",
+      "complaint_code": "HC-2025-1008",
+      "student_id": "cccc0000-0000-0000-0000-000000000001",
+      "room_id": "11111111-1111-1111-1111-111111111204",
+      "title": "Study Table Drawer Broken & Jammed",
+      "description": "The wooden slider runner broke off, so the main drawer cannot open or close properly.",
+      "category": "Furniture",
+      "priority": "Low",
+      "status": "Resolved",
+      "images": [],
+      "resolution_images": [],
+      "assigned_technician_id": "bbbb0000-0000-0000-0000-000000000004",
+      "ai_analysis": {
+        "category_suggested": "Furniture",
+        "priority_suggested": "Low",
+        "suggested_specialization": "Carpenter",
+        "summary": "Jammed study table drawer with broken wooden slider.",
+        "confidence": 0.94,
+        "source": "rule-based-engine"
+      },
+      "is_escalated": false,
+      "resolved_at": "2026-10-29T07:27:57.892Z",
+      "closed_at": "2026-10-29T11:27:57.892Z",
+      "created_at": "2026-10-28T07:27:57.892Z"
+    },
+    {
+      "id": "dddd0000-0000-0000-0000-000000000005",
+      "complaint_code": "HC-2025-1002",
+      "student_id": "cccc0000-0000-0000-0000-000000000002",
+      "room_id": "22222222-2222-2222-2222-222222222105",
+      "title": "Water Supply Overhead Tank Valve Jammed (No Water)",
+      "description": "No running water in any taps for more than 30 hours. Tank supply line is completely dry.",
+      "category": "Water Supply",
+      "priority": "Urgent",
+      "status": "Escalated",
+      "images": [],
+      "resolution_images": [],
+      "assigned_technician_id": "bbbb0000-0000-0000-0000-000000000002",
+      "ai_analysis": {
+        "category_suggested": "Water Supply",
+        "priority_suggested": "Urgent",
+        "suggested_specialization": "Plumber",
+        "summary": "Overhead tank valve jammed, zero water supply across entire wing for >30 hrs.",
+        "urgency_flags": [
+          "Safety Hazard Detected",
+          "Severe Amenity Deprivation"
+        ],
+        "confidence": 0.99,
+        "source": "gemini-ai"
+      },
+      "is_escalated": true,
+      "escalation_reason": "Automated Escalation: Ticket HC-2025-1002 exceeded 6h threshold for Urgent priority.",
+      "escalated_at": "2026-10-29T19:27:57.892Z",
+      "created_at": "2026-10-28T19:27:57.892Z"
+    }
+  ],
+  "complaint_history": [
+    {
+      "id": "eeee0000-0000-0000-0000-000000000001",
+      "complaint_id": "dddd0000-0000-0000-0000-000000000001",
+      "action": "Submitted",
+      "previous_status": null,
+      "new_status": "Submitted",
+      "performed_by": "cccc0000-0000-0000-0000-000000000001",
+      "performer_role": "student",
+      "remarks": "Lodged via Student Portal.",
+      "created_at": "2026-10-30T04:27:57.892Z"
+    },
+    {
+      "id": "eeee0000-0000-0000-0000-000000000002",
+      "complaint_id": "dddd0000-0000-0000-0000-000000000001",
+      "action": "Technician Assigned",
+      "previous_status": "Submitted",
+      "new_status": "Assigned",
+      "performed_by": "aaaa0000-0000-0000-0000-000000000001",
+      "performer_role": "admin",
+      "remarks": "Assigned to Rajesh Kumar (Electrical Specialist) with Urgent priority.",
+      "created_at": "2026-10-30T04:57:57.892Z"
+    },
+    {
+      "id": "eeee0000-0000-0000-0000-000000000003",
+      "complaint_id": "dddd0000-0000-0000-0000-000000000001",
+      "action": "Status Changed to In Progress",
+      "previous_status": "Assigned",
+      "new_status": "In Progress",
+      "performed_by": "bbbb0000-0000-0000-0000-000000000001",
+      "performer_role": "technician",
+      "remarks": "Technician on-site. Testing capacitor and regulator wiring.",
+      "created_at": "2026-10-30T06:27:57.892Z"
+    },
+    {
+      "id": "eeee0000-0000-0000-0000-000000000004",
+      "complaint_id": "dddd0000-0000-0000-0000-000000000004",
+      "action": "Resolved",
+      "previous_status": "In Progress",
+      "new_status": "Resolved",
+      "performed_by": "bbbb0000-0000-0000-0000-000000000004",
+      "performer_role": "technician",
+      "remarks": "Drawer runner replaced with new heavy-duty metal channel. Tested smooth operation.",
+      "created_at": "2026-10-29T07:27:57.892Z"
+    },
+    {
+      "id": "eeee0000-0000-0000-0000-000000000005",
+      "complaint_id": "dddd0000-0000-0000-0000-000000000004",
+      "action": "Feedback Submitted",
+      "previous_status": "Resolved",
+      "new_status": "Verified/Closed",
+      "performed_by": "cccc0000-0000-0000-0000-000000000001",
+      "performer_role": "student",
+      "remarks": "Student rated 5/5 stars: \"Carpenter fixed it very neatly and promptly!\"",
+      "created_at": "2026-10-29T11:27:57.892Z"
+    }
+  ],
+  "feedback": [
+    {
+      "id": "ffff0000-0000-0000-0000-000000000001",
+      "complaint_id": "dddd0000-0000-0000-0000-000000000004",
+      "student_id": "cccc0000-0000-0000-0000-000000000001",
+      "rating": 5,
+      "comments": "Carpenter fixed it very neatly and promptly! Excellent service.",
+      "created_at": "2026-10-29T11:27:57.892Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "99990000-0000-0000-0000-000000000001",
+      "user_id": "aaaa0000-0000-0000-0000-000000000001",
+      "title": "Urgent Complaint Lodged: HC-2025-1011",
+      "message": "Ceiling Fan Making Burning Smell & Sparks in Room A-204.",
+      "type": "alert",
+      "complaint_id": "dddd0000-0000-0000-0000-000000000001",
+      "is_read": false,
+      "created_at": "2026-10-30T04:27:57.892Z"
+    },
+    {
+      "id": "99990000-0000-0000-0000-000000000002",
+      "user_id": "bbbb0000-0000-0000-0000-000000000001",
+      "title": "New Task Assigned: HC-2025-1011",
+      "message": "Room A-204 ceiling fan spark hazard assigned to you with Urgent priority.",
+      "type": "info",
+      "complaint_id": "dddd0000-0000-0000-0000-000000000001",
+      "is_read": false,
+      "created_at": "2026-10-30T04:57:57.892Z"
+    },
+    {
+      "id": "99990000-0000-0000-0000-000000000003",
+      "user_id": "cccc0000-0000-0000-0000-000000000001",
+      "title": "Technician Assigned",
+      "message": "Rajesh Kumar has been dispatched to Room A-204 for your complaint HC-2025-1011.",
+      "type": "info",
+      "complaint_id": "dddd0000-0000-0000-0000-000000000001",
+      "is_read": false,
+      "created_at": "2026-10-30T04:57:57.892Z"
+    },
+    {
+      "id": "99990000-0000-0000-0000-000000000004",
+      "user_id": "aaaa0000-0000-0000-0000-000000000001",
+      "title": "Ticket Escalated: HC-2025-1002",
+      "message": "Overdue water supply complaint in Block B has reached critical escalation threshold.",
+      "type": "escalation",
+      "complaint_id": "dddd0000-0000-0000-0000-000000000005",
+      "is_read": false,
+      "created_at": "2026-10-29T19:27:57.892Z"
+    }
+  ]
+}
