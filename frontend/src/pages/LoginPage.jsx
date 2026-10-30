@@ -32,7 +32,7 @@ export const LoginPage = () => {
   const navigate = useNavigate();
 
   const portalRoles = [
-    { id: 'all', label: 'All Roles', icon: null },
+    
     { id: 'student', label: 'Student', icon: <GraduationCap className="w-3.5 h-3.5 text-sky-400" /> },
     { id: 'warden', label: 'Warden', icon: <Shield className="w-3.5 h-3.5 text-purple-400" /> },
     { id: 'electrician', label: 'Electrician', icon: <Zap className="w-3.5 h-3.5 text-amber-400" /> },
